@@ -34,14 +34,16 @@ body{
 /* estilos de las CAJAS DE CALCULO*/
 /*las cajas las organizamos con float, por lo tanto colocamos la propiedad overflow en
 la caja padre que es figure, para que las cajas no se salgan de este div*/
+/*para que nuestra pagina sea responsive debemos manejar los width en % y al final usar los media queries*/
 .figure{
     width: 90%;
     margin: auto;
     padding: 10px;
     overflow: hidden;
+    max-width: 1000px;
 }
 .box{
-    width: 340px;
+    width: 30%;/*340px*/
     height: 600px;
     border: 3px solid #253062;
     border-radius: 10px;
@@ -92,4 +94,43 @@ la caja padre que es figure, para que las cajas no se salgan de este div*/
 }
 .box-main__btn:active{
     background-color: #4c5580;
+}
+
+/* Web responsiva*/
+@media screen and (max-width: 1021px){
+    .figure{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px){/*tableta horizontal*/
+    .box{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px){/*tableta vertical*/
+    .box{
+        width: 90%;
+        margin: 25px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 640px){/*celular horizontal*/
+    .box{
+        width: 90%;
+        margin: 25px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 360px){/*celular horizontal*/
+    .box{
+        width: 90%;
+        margin: 20px;
+        height: auto;
+    }
+    .header-title{
+        font-size: 25px;
+    }
+    .answer p{
+        font-size: 20px;
+    }
 }
