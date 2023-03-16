@@ -6,4 +6,6 @@ El código se realiza con HTML5 en Visula Studio Code.
 
 Ejercicio practico en el curso de JavaScript de Cero a Experto de Udemy.
 
-Cuando lleguemos a la capacitación en Javascript, se terminará este proyecto para que la respuesta se dé según datos ingresados en los input.
+Los calculos se realizan en un archivo llamado operaciones.js, el cual se vincula con el index.html para que interactúen y presentar los resultados según datos y botones seleccionados o usados.
+
+Esta interacción entre el HTML y JS, la realicé consultando y aplicando lo visto en los videos de youtube consultados.
