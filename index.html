@@ -21,7 +21,7 @@
 
     <!--  RESPUESTA  -->
     <div class="answer">
-      <p>El área del cuadrado es: 45 cm</p>
+      <p id="answer">El área del cuadrado es: 45 cm</p>
     </div>
 
     <!-- CAJAS DE CALCULO  -->
@@ -34,8 +34,8 @@
         <div class="box-main">
           <p class="box-main__text">¿Cuánto mide cada lado del cuadrado?</p>
           <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese el valor de un lado"/>
-          <button class="box-main__btn type="button">Perimetro</button>
-          <button class="box-main__btn type="button">Área</button>
+          <button class="box-main__btn type="button" onclick="perimetroCuadrado()">Perimetro</button>
+          <button class="box-main__btn type="button" onclick="areaCuadrado()">Área</button>
         </div>
       </div>
 
@@ -45,13 +45,13 @@
         </div>
         <div class="box-main">
           <p class="box-main__text">¿Cuánto mide cada lado del triángulo?</p>
-          <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese el valor del lado 1"/>
-          <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese el valor del lado 2"/>
-          <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese el valor del lado 3"/>
+          <input class="box-main__input type="number" name="side" id="side1" placeholder="Ingrese el valor del lado 1"/>
+          <input class="box-main__input type="number" name="side" id="side2" placeholder="Ingrese el valor del lado 2"/>
+          <input class="box-main__input type="number" name="side" id="side3" placeholder="Ingrese el valor del lado 3"/>
           <button class="box-main__btn type="button">Perimetro</button>
           <p class="box-main__text">¿Cuánto mide la base y altura del triángulo?</p>
-          <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese valor de la base"/>
-          <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese valor de la altura"/>
+          <input class="box-main__input type="number" name="side" id="side4" placeholder="Ingrese valor de la base"/>
+          <input class="box-main__input type="number" name="side" id="side5" placeholder="Ingrese valor de la altura"/>
           <button class="box-main__btn type="button">Área</button>
         </div>
       </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="box-main">
           <p class="box-main__text">¿Cuánto mide el radio del circulo?</p>
-          <input class="box-main__input type="number" name="side" id="side" placeholder="Ingrese valor del radio"/>
+          <input class="box-main__input type="number" name="side" id="side6" placeholder="Ingrese valor del radio"/>
           <button class="box-main__btn type="button">Diámetro</button>
           <button class="box-main__btn type="button">Perimetro</button>
           <button class="box-main__btn type="button">Área</button>
@@ -70,5 +70,6 @@
       </div>
 
     </section>
+    <script src="operaciones.js"></script>
   </body>
 </html>

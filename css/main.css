@@ -121,7 +121,7 @@ la caja padre que es figure, para que las cajas no se salgan de este div*/
         height: auto;
     }
 }
-@media screen and (max-width: 360px){/*celular horizontal*/
+@media screen and (max-width: 360px){/*celular vertical*/
     .box{
         width: 90%;
         margin: 20px;
